@@ -1,4 +1,4 @@
-"""ProjectMK URL Configuration
+"""airline URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.0/topics/http/urls/
@@ -17,9 +17,7 @@ from django.contrib import admin
 from django.urls import path,include
 
 urlpatterns = [
+    path('flights/',include("flights.urls")),
+    path('users/',include("users.urls")),
     path('admin/', admin.site.urls),
-    path('hello/',include("hello.urls")),
-    path('newyear/',include("newyear.urls")),
-    path('mytasks/',include("mytasks.urls")),
-    path('Attendance/',include("Attendance.urls"))
 ]
