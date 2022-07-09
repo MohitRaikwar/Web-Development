@@ -92,7 +92,6 @@ document.addEventListener('DOMContentLoaded',()=>{
 document.addEventListener('DOMContentLoaded',()=>{
     const a=document.querySelector('.mk');
     a.addEventListener('click',(event)=>{
-        
         const shouldChangePage=confirm("Do you wish to proceed");
         if(!shouldChangePage)
         {
